@@ -1,3 +1,13 @@
 {
-  "extends": "@react-native/typescript-config/tsconfig.json"
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@react-navigation/native-stack": [
+        "node_modules/@react-navigation/native-stack"
+      ]
+    },
+    // Optionally, skip checking library declaration files if issues persist:
+    "skipLibCheck": true
+  }
 }
